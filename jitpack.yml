@@ -2,5 +2,8 @@ jdk:
   - openjdk11
 
 install:
-  - cd my_flutter/android
-  - ./gradlew clean build
+  - cd android
+  - ./gradlew clean assembleRelease
+
+script:
+  - ./gradlew build
